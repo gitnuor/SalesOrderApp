@@ -1,0 +1,84 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SalesOrder
+build_property.RootNamespace = SalesOrder
+build_property.ProjectDir = C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Order/OrderWiseDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJXaXNlRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Order/_OrderEntry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcX09yZGVyRW50cnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Order/_updateOrderDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcX3VwZGF0ZU9yZGVyRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Shared/Components/MainMenuWidget/_MainNavigation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWFpbk1lbnVXaWRnZXRcX01haW5OYXZpZ2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Shared/Components/TopMenuWidget/_TopNavigation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG9wTWVudVdpZGdldFxfVG9wTmF2aWdhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Shared/Template/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRlbXBsYXRlXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Shared/Template/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRlbXBsYXRlXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Shared/Template/_Scripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRlbXBsYXRlXF9TY3JpcHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Shared/Template/_Styles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRlbXBsYXRlXF9TdHlsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Window/Elements.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2luZG93XEVsZW1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Window/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2luZG93XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Window/_ElementEntry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2luZG93XF9FbGVtZW50RW50cnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/Window/_windowEntry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2luZG93XF93aW5kb3dFbnRyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/noor.alam/Desktop/New folder (4)/SalesOrderApp/SalesOrder/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

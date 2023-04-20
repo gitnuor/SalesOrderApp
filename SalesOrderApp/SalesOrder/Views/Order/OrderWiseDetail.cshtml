@@ -1,0 +1,294 @@
+﻿@{
+    ViewData["Title"] = "Order Details";
+    Layout = "~/Views/Shared/Template/_Layout.cshtml";
+}
+
+
+<br />
+<div class="content">
+    <div class="container-fluid">
+        <div class="card card-default">
+            <div class="card-header">
+                <h3 class="card-title">Order Details</h3>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-content">
+                     <div class="form-group row" id="DropDownList">
+                                <label class="col-sm-2 col-form-label-sm text-right">Order Select <span class="text-danger ml-005"></span></label>
+                                <div class="col-sm-4 ">
+                                    <select id="orderId" class="form-control select2" placeholder="Select a Order" style="width: 100%;">
+                                    </select>
+                                    <input type="hidden" id="UtempId" />
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-primary mb-3" id="btn-Search">Search</button>
+                                    
+                                </div>
+                     </div>
+                      <div id="product-summary" class="media-list position-relative">
+                        <div class="table-responsive">
+                            <table class="table table-padded table-xl mb-0 w-100" id="process-list-table">
+                                <thead>
+                                    <tr>  
+                                        <th>Order Name</th>
+                                        <th>State</th>
+                                        <th>Wndow Name</th>
+                                        <th>Type</th>
+                                        <th>Width</th>
+                                        <th>Height</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<partial name="_updateOrderDetails" />
+
+@section Scripts
+{
+    <script>
+    var pageSize = 5;
+    
+    $("#orderId").select2({
+        //debug;
+        multiple: false,
+        delay: 250,
+        cache: true,
+        templateSelection: function (state) {
+            if (state.id) {
+                return state.name ? state.name : state.text;
+            }
+        },
+        ajax: {
+            url: "/Order/OrderFilter",
+            data: function (params) {
+                var query = {
+                    orderId: (!params.term) ?  "":params.term,
+                    orderName: (!params.term) ?  "":params.term,
+                    pageNumber: params.page || 1,
+                    pageSize: pageSize
+                    
+                };
+                return query;
+            },
+            dataType: 'json',
+            processResults: function (response, params) {
+                
+                selectData = {};
+                params.page = params.page || 1;
+                selectData = response.data.map(function (item) {
+                    return {
+                        id: item.orderId,
+                        text: item.orderName                       
+                    };
+                });
+                //hideLoader();
+                return {
+                    results: selectData,
+                     pagination: {
+                        more: (params.page * pageSize) < response.total
+                    }
+                };
+            }
+        },
+        placeholder: "Select a State",
+        allowClear: true,
+        dropdownParent: $("#DropDownList")
+
+    });
+
+    $(document).on('select2:open', () => {
+        document.querySelector('.select2-search__field').focus();
+    });
+
+    $(document).on('click', '#btn-Search', function () {
+        debugger;
+        let seachString = $("#orderId").val();
+        loadList(seachString);
+        $('#userId').val(null).trigger("change");
+           
+    });
+
+    var table;
+
+    table = $('#process-list-table').DataTable({
+        "filter": true, 
+        "paging": true,
+        "pageLength": 10,
+        "lengthChange": false,
+        "pagingType": "full_numbers",
+        "scrollX": false,
+        "autoWidth": true,
+        "initComplete": function (settings, json) {
+            $("#process-list-table").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
+
+            var btns = $('.btn-primary');
+                btns.addClass('btn-sm');
+                btns.removeClass('btn-secondary');
+        },
+        buttons: [
+            {
+                id:"btnAddNew",
+                text: 'Add New',
+                className: 'btn-primary',
+                action: function ( e, dt, node, config ) {
+                    $("#process-entry-modal").modal('show');
+                }
+            }
+        ],
+    });
+
+    function loadList(seachString) {
+        debugger;
+        $('#process-list-table').DataTable().destroy();
+
+        table =  $('#process-list-table').DataTable({
+            
+            "language": {
+                processing: '<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i><span class="sr-only">Loading...</span> '
+            },
+            "filter": true, 
+            "paging": true,
+            "pageLength": 10,
+            "lengthChange": false,
+            "pagingType": "full_numbers",
+            "scrollX": false,
+            "autoWidth": true,
+            "bInfo" : false,
+            "ajax": {
+                "url": "/Order/GetDetailList",
+                "dataSrc": function(d) {
+                    if (d.data.length === 0) {
+                        var settings = $('#process-list-table').DataTable().settings()[0];
+                        settings.oLanguage.sEmptyTable = d.message;
+                    }
+                    return d.data;
+                },
+                "data": { orderId: seachString},
+                "type": "GET",
+                "dataType": "json"
+            },
+            "columns": [
+                { "data": "orderName", "name": "orderName" }, 
+                { "data": "state", "name": "state" }, 
+                { "data": "windowName", "name": "windowName" },
+                { "data": "type", "name": "type" },
+                { "data": "width", "name": "width" },
+                { "data": "height", "name": "height" },
+                               
+                {
+                    data: null,
+                    render: function (data, type, row) {
+                        var dom = '<span class="cursor-pointer row-edit" ><i class="fas fa-edit primary fa-2x"></i><span>';
+                        return dom;
+                    }
+                },
+            ],
+            dom: 'Bfrtip',
+            
+            "initComplete": function(settings, json) {
+                $("#process-list-table").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
+
+                var btns = $('.btn-primary');
+                btns.addClass('btn-sm');
+                btns.removeClass('btn-secondary');
+            }
+        });
+
+
+
+    }
+
+    function clearModal() {
+        $('#orderId').val(null).trigger("change");
+        $('#windowName').val('');
+        $('#hdnTypeId').val('');
+    }
+
+    $('#process-list-table').on('click', '.row-edit', function() {
+
+             var rowData = table.row($(this).parents('tr')).data();
+            console.log(rowData);
+
+            $('#uwndowId').val(rowData['windowName']);
+            $('#ustate').val(rowData['state']);
+            $('#uwidth').val(rowData['width']);
+            $('#uheight').val(rowData['height']);
+            $('#UorderId').val(rowData['orderId']);
+            $('#lblOrderno').text(rowData['orderName']);
+
+            $("#order-update-modal").modal('show');
+        } )
+  
+     $('#order-update-modal').on('click', '#btn-Update-Add', function () {
+
+             let orderName=$("#lblOrderno").text();
+             orderId = $('#UorderId').val();
+           
+             $.confirm({
+                title: 'Confirm!',
+                content: 'Are you sure to update?',
+                buttons: {
+                    confirm: function () {
+
+                        orderDetail = {
+                            windowName: $('#uwndowId').val(),
+                            state: $('#ustate').val(),
+                            width: $('#uwidth').val(),
+                            height: $('#uheight').val(),
+                            orderId: $('#UorderId').val(),
+                            orderName:orderName
+                        }
+
+                        $.ajax({
+
+                                url: "/Order/UpdateOrder",
+                                type: "POST",
+                                data: { orderDetail: orderDetail },
+                                success: function (data) {
+
+                                    if (data.status == true) {
+                                        clearModal();
+                                        loadList(orderId);
+                                        $("#order-update-modal").modal('hide');
+                                    }
+                                    else {
+                                        toastr.error("Error", data.message);
+                                        $.alert(data.message);
+                                    }
+                                }
+                            });
+
+                    },
+                    cancel: function () {
+
+                    }
+                }
+            });
+
+        });
+    
+    function CloseModalPopup() {       
+            $("#order-update-modal").modal('hide');
+            $("#btn_close").modal('hide');
+            clearModal();
+    }
+
+    </script>
+}

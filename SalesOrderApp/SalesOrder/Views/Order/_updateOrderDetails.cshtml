@@ -1,0 +1,60 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="modal fade text-left" id="order-update-modal" role="dialog" aria-labelledby="reassign-modal-label" aria-hidden="true" style="z-index:1051;">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-info">
+                <h6 class="modal-title text-white" id="reassign-modal-label">Order Details <span id="option">Update</span></h6>
+                <button type="button" class="close text-white" onclick="CloseModalPopup();"  data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body modal-fixed">
+                 <div class="form-group row" style="margin-bottom: 0.3rem;">
+                    <label  class ="col-sm-2 col-form-label-sm text-right">Order  <span class="text-danger ml-005">Name :</span></label>
+                     <div class="col-sm-4 ">
+                          <label id="lblOrderno"   class ="col-sm-8 col-form-label-sm text-right"> </label>
+                         
+                    </div> 
+                       <input type="hidden" id="UorderId" />
+                 </div>
+               
+                <div class="form-group row" style="margin-bottom: 0.3rem;">
+                    <label class ="col-sm-2 col-form-label-sm text-right">WindowName</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" id="uwndowId" class="form-control form-control-sm" placeholder="Enter Window" autocomplete="off" style="width: 100%;">
+                    </div>                    
+                    <label class ="col-sm-2 col-form-label-sm text-right">State <span class="text-danger ml-005"></span></label>
+                    <div class=" col-sm-4 ">
+                        <input type="text" id="ustate" class=" form-control form-control-sm" placeholder="Enter State" autocomplete="off" style="width: 100%;"> 
+                    </div>                         
+                </div>
+                <div class="form-group row" style="margin-bottom: 0.3rem;">
+                    <label class ="col-sm-2 col-form-label-sm text-right">Width <span class="text-danger ml-005"></span></label>
+                    <div class="col-sm-10">
+                        <input type="number" id="uwidth" class="form-control form-control-sm" placeholder="Enter Width" autocomplete="off" style="width: 100%;">
+                    </div>
+                    <label class ="col-sm-2 col-form-label-sm text-right">Height</label>
+                    <div class="col-sm-10">
+                        <input type="number" id="uheight" class="form-control form-control-sm" placeholder="Enter Height" autocomplete="off" style="width: 100%;">
+                    </div>
+
+                </div>
+                
+                <div class="row" style="margin-bottom: 0.3rem;">
+                    <div class="col-md-12 float-right">
+                        <div class="form-group" style="text-align:center">
+                            <button type="button" class="btn btn-primary " id="btn-Update-Add">Update </button>
+                            @*<button type="button" class="btn grey btn-secondary" data-dismiss="modal">Close</button>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

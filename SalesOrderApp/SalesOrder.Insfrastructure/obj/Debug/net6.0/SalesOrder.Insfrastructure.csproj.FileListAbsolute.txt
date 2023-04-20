@@ -1,0 +1,17 @@
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\bin\Debug\net6.0\SalesOrder.Insfrastructure.deps.json
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\bin\Debug\net6.0\SalesOrder.Insfrastructure.dll
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\bin\Debug\net6.0\SalesOrder.Insfrastructure.pdb
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\bin\Debug\net6.0\SalesOrder.Application.dll
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\bin\Debug\net6.0\SalesOrder.Domain.dll
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\bin\Debug\net6.0\SalesOrder.Application.pdb
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\bin\Debug\net6.0\SalesOrder.Domain.pdb
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\obj\Debug\net6.0\SalesOrder.Insfrastructure.csproj.AssemblyReference.cache
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\obj\Debug\net6.0\SalesOrder.Insfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\obj\Debug\net6.0\SalesOrder.Insfrastructure.AssemblyInfoInputs.cache
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\obj\Debug\net6.0\SalesOrder.Insfrastructure.AssemblyInfo.cs
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\obj\Debug\net6.0\SalesOrder.Insfrastructure.csproj.CoreCompileInputs.cache
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\obj\Debug\net6.0\SalesOrder.Insfrastructure.csproj.CopyComplete
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\obj\Debug\net6.0\SalesOrder.Insfrastructure.dll
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\obj\Debug\net6.0\refint\SalesOrder.Insfrastructure.dll
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\obj\Debug\net6.0\SalesOrder.Insfrastructure.pdb
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Insfrastructure\obj\Debug\net6.0\ref\SalesOrder.Insfrastructure.dll

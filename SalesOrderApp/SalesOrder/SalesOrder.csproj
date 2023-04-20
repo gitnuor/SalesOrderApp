@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.8" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SalesOrder.Application\SalesOrder.Application.csproj" />
+    <ProjectReference Include="..\SalesOrder.Domain\SalesOrder.Domain.csproj" />
+    <ProjectReference Include="..\SalesOrder.Insfrastructure\SalesOrder.Insfrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

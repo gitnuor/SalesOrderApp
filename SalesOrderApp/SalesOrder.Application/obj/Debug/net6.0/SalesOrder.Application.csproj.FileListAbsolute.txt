@@ -1,0 +1,15 @@
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\bin\Debug\net6.0\SalesOrder.Application.deps.json
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\bin\Debug\net6.0\SalesOrder.Application.dll
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\bin\Debug\net6.0\SalesOrder.Application.pdb
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\bin\Debug\net6.0\SalesOrder.Domain.dll
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\bin\Debug\net6.0\SalesOrder.Domain.pdb
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\obj\Debug\net6.0\SalesOrder.Application.csproj.AssemblyReference.cache
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\obj\Debug\net6.0\SalesOrder.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\obj\Debug\net6.0\SalesOrder.Application.AssemblyInfoInputs.cache
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\obj\Debug\net6.0\SalesOrder.Application.AssemblyInfo.cs
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\obj\Debug\net6.0\SalesOrder.Application.csproj.CoreCompileInputs.cache
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\obj\Debug\net6.0\SalesOrder.Application.csproj.CopyComplete
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\obj\Debug\net6.0\SalesOrder.Application.dll
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\obj\Debug\net6.0\refint\SalesOrder.Application.dll
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\obj\Debug\net6.0\SalesOrder.Application.pdb
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Application\obj\Debug\net6.0\ref\SalesOrder.Application.dll

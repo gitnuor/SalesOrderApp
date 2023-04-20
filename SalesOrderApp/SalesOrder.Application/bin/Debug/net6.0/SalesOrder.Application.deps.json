@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SalesOrder.Application/1.0.0": {
+        "dependencies": {
+          "SalesOrder.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SalesOrder.Application.dll": {}
+        }
+      },
+      "SalesOrder.Domain/1.0.0": {
+        "runtime": {
+          "SalesOrder.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SalesOrder.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SalesOrder.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

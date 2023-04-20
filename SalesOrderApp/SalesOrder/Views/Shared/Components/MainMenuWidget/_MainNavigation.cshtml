@@ -1,0 +1,77 @@
+﻿@using static SalesOrder.Helpers.NavigationIndicatorHelper;
+
+@*@model IEnumerable<MenuViewModel>*@
+
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <a href="~/Home" class="brand-link">
+        
+        <span class="brand-text font-weight-bolder" style="color:#fff">Sales Order App</span>
+    </a>
+    <div class="sidebar">
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-item">
+                   @* <a asp-action="Index" asp-controller="Home" class="nav-link">
+                        <i class="nav-icon fas fa-home"></i>
+                        <p>
+                            Home
+                        </p>
+                    </a>*@
+                     <a asp-controller="Home" asp-action="Index" class="nav-link @Url.MakeActiveClass("/Home/Index")">
+                       <i class="nav-icon fas fa-home"></i>
+                        <p>
+                            Home
+                        </p>
+                       </a>
+                </li>
+
+                <li class="nav-item" id="tab1">
+                    <a href="#" data-toggle="collapse" aria-expanded="false" class="nav-link  bar-item-hover dropdown-toggle text-wrap">
+                        <i class="fas fa-arrows-alt"></i>
+                        <p class="mystyle">
+                            Menu
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+
+                    <ul class="nav nav-treeview" open-menu>
+                        <li class="nav-item">
+                            <a asp-controller="Order" asp-action="Index" class="nav-link @Url.MakeActiveClass("/Order/Index")">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Order </p>
+                            </a>
+                        </li>
+                         <li class="nav-item">
+                            <a asp-controller="Window" asp-action="Index" class="nav-link @Url.MakeActiveClass("/Window/Index")">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Window </p>
+                            </a>
+                        </li>
+                         <li class="nav-item">
+                            <a asp-controller="Window" asp-action="Elements" class="nav-link @Url.MakeActiveClass("/Window/Elements")">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Element </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Order" asp-action="OrderWiseDetail" class="nav-link @Url.MakeActiveClass("/Order/OrderWiseDetail")">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Order Wise Info </p>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+              
+
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+
+<script src="~/js/jquery-1.8.3.min.js"></script>
+<script type='text/javascript'>
+
+</script>

@@ -1,0 +1,12 @@
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Domain\bin\Debug\net6.0\SalesOrder.Domain.deps.json
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Domain\bin\Debug\net6.0\SalesOrder.Domain.dll
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Domain\bin\Debug\net6.0\SalesOrder.Domain.pdb
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Domain\obj\Debug\net6.0\SalesOrder.Domain.csproj.AssemblyReference.cache
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Domain\obj\Debug\net6.0\SalesOrder.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Domain\obj\Debug\net6.0\SalesOrder.Domain.AssemblyInfoInputs.cache
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Domain\obj\Debug\net6.0\SalesOrder.Domain.AssemblyInfo.cs
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Domain\obj\Debug\net6.0\SalesOrder.Domain.csproj.CoreCompileInputs.cache
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Domain\obj\Debug\net6.0\SalesOrder.Domain.dll
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Domain\obj\Debug\net6.0\refint\SalesOrder.Domain.dll
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Domain\obj\Debug\net6.0\SalesOrder.Domain.pdb
+C:\Users\noor.alam\Desktop\New folder (4)\SalesOrderApp\SalesOrder.Domain\obj\Debug\net6.0\ref\SalesOrder.Domain.dll
